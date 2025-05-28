@@ -1,0 +1,125 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
+
+header p {
+  font-size: 36px;
+  float: left;
+  margin: 20px 40px;
+}
+
+header li {
+  float: left;
+  margin: 33px 20px;
+}
+
+.copy-container {
+  padding: 100px 80px;  
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.main-contents {
+  height: 500px;
+  margin: 0 80px 100px 80px;
+}
+
+.main-contents h3 {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.content {
+  float: left;
+  margin: 0 40px 30px 0;
+}
+
+.content p {
+  font-size: 24px;
+}
+
+.contact-form {
+  margin: 0 80px 100px 80px;
+}
+
+.contact-form h3 {
+  font-size: 28px;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.input-area {
+  width: 400px;
+}
+
+.input-area p {
+  /*font-size: 18px;*/
+  border-bottom: 1px solid #dee7ec;
+  padding-bottom: 10px;
+}
+
+input, textarea {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #dee7ec;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.btn {
+  color: #889eab;
+  background-color: #dee7ec;
+}
+
+footer {
+  color: #fff;
+  background-color: #2f5167;
+  padding: 40px;
+  height: 120px;
+}
+
+footer p {
+  font-size: 32px;
+  float: left;
+}
+
+footer ul {
+  float: right;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
