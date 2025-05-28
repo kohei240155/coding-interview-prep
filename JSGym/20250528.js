@@ -78,3 +78,43 @@ console.log(sortedItems(products, maxPrice));
 // const maxPrice = 50000;
 
 // console.log(findAffordableProducts(products, maxPrice));
+
+/*
+================================================================================
+問題: 🔥筋肉計算！BMIを求める関数を作ろう！💪
+出典: https://jsgym.shiftb.dev/q/G6HiVQB0jb
+結果:
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ① 定数として身長(m)と体重(kg)を定義
+const height = 1.75;
+const weight = 68;
+
+// ② BMIを計算して返す関数を作成
+// ここに関数のコードを書いてください。
+const calcBmi = (height, weight) => (weight / (height * height)).toFixed(1) ;
+
+// ③ 定義した関数を使ってBMIを計算し、結果をconsole.logで表示
+// ここに関数の実行コードを書いてください。
+console.log(calcBmi(height, weight));
+
+// 📘 模範解答
+// const calcBMI = (height, weight) => {
+//   return (weight / (height * height)).toFixed(1);
+// };
+
+// const height = 1.75;
+// const weight = 68;
+
+// console.log(calcBMI(height, weight)); // 22.2
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- toFiexed()は指定した小数点以下まで四捨五入することができる
+- 戻り値はStringになるので、数値で戻す必要がある場合は変換処理が必要
+- 金額表示などで小数点〇桁まで表示したい場合などで使われる
+--------------------------------------------------------------------------------
+*/
