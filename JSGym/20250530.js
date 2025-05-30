@@ -69,3 +69,49 @@ console.log(getYoubi(date));
 - 日曜が0から始まるので、それに対応する日本語の曜日配列を用意する
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: 配列内の最長の文字列を探す関数🔥🔥
+出典: https://jsgym.shiftb.dev/q/GLHyaX9Jis
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ① 引数となる配列の定義
+const words = ["筋肉", "マッスル", "ビルドアップ", "トレーニング"];
+
+// ② 最長の文字列を探す関数の定義
+// ここに関数定義のコードを書いてください。
+const getLongestWord = (words) => {
+  let maxWord = "";
+  let maxWordCnt = 0;
+
+  words.forEach((item) => {
+    if (maxWordCnt < item.length) {
+      maxWord = item;
+      maxWordCnt = item.length;
+    }
+  });
+
+  return maxWord;
+}
+
+// ③ 関数の実行と結果の表示
+// ここに関数実行とconsole.logのコードを書いてください。
+console.log(getLongestWord(words));
+
+// 📘 模範解答
+// const findLongestWord = (words) => words.reduce((longest, currentWord) => (currentWord.length > longest.length ? currentWord : longest), "");
+
+// const words = ["筋肉", "マッスル", "ビルドアップ", "トレーニング"];
+// console.log(findLongestWord(words)); // "トレーニング"
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- reduceではメソッド内でreturnした結果がaccに追加される
+- 初期値の記載を忘れると予期せぬ挙動を招く可能性があるので注意する
+- 配列の中で最も〇〇な値を取得したい場合にreduceが便利
+--------------------------------------------------------------------------------
+*/
