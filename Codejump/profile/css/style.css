@@ -31,6 +31,18 @@ li {
     display: block;
 }
 
+.section-title {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto 100px;
@@ -75,9 +87,36 @@ li {
     object-fit: cover;
 }
 
+/* About */
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
 @media screen and (max-width: 600px) {
-    /* メインビジュアル */
+    /* Main Visual */
     #mainvisual img {
         height: calc(100vh - 60px);
+    }
+
+    /* About */
+    #about .content {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-right: 0;
     }
 }
