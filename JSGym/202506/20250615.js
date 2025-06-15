@@ -31,3 +31,28 @@ console.log(trimText(sampleText)); // 実行結果を表示してください
 - 半角スペースやタブ、改行などにスペースっぽいものに対して対応してくれる
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: 🔥筋肉配列を間隔広く並べる関数を作ろう！！💪
+出典: https://jsgym.shiftb.dev/q/vqTyIWaju9
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ①定数を定義する
+const exercises = ['スクワット', 'ベンチプレス', 'デッドリフト'];
+const separator = '-';
+
+// ②お題を満たす関数の定義
+// ここに関数定義のコードを書いてください
+const joinString = (exercises, separator) => exercises.join(separator);
+
+// ③作った関数を実行し、結果をconsole.logで表示する
+// 関数を実行して表示するコードを書いてください
+console.log(joinString(exercises, separator));
+
+// 📘 模範解答
+// const joinExerciseNames = (arr, separator) => arr.join(separator);
+
+// console.log(joinExerciseNames(['スクワット', 'ベンチプレス', 'デッドリフト'], '-')); //スクワット-ベンチプレス-デッドリフト
