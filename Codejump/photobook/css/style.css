@@ -17,17 +17,23 @@ img {
     /* max-width: 100%; */
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 .container {
     width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .inner {
+    width: 700px;
+    margin: 0 auto;
+}
 
+.section-title {
+    font: bold;
+    font-size: 18px;
 }
 
 /* header */
@@ -45,6 +51,24 @@ header img {
 #main-visual img {
     width: 1000px;
     height: 400px;
+    margin-bottom: 60px;
 }
 
 /* index */
+#index {
+    background-color: #FFFFFF;
+    padding: 35px 0;
+}
+
+.index-list {
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+#index li {
+    margin-bottom: 26px;
+}
+
+#index li:last-child {
+    margin-bottom: 0;
+}
