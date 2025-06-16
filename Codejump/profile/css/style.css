@@ -115,6 +115,13 @@ li {
     width: 32%;
 }
 
+/* Footer */
+#footer {
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
 @media screen and (max-width: 600px) {
     /* Main Visual */
     #mainvisual img {
