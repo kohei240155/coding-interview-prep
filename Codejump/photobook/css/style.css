@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333333;
+    background-color: #F4F9FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /* max-width: 100%; */
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.inner {
+
+}
+
+/* header */
+header {
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+header img {
+    width: 160px;
+    height: 18px;
+}
