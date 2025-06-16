@@ -118,3 +118,8 @@ header img {
 #detail .border {
     border: 1px solid #DEDEDE;
 }
+
+/* footer */
+footer p {
+    margin-bottom: 17px;
+}
