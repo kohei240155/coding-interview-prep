@@ -28,3 +28,90 @@ console.log(convertNumToAbs(numbers));
 - Math.absを使うと数値を絶対値に変換することができる
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: 入力文字数に応じてプログレスバーを表示しよう📊
+出典: https://jsgym.shiftb.dev/q/3f-chppc1B
+================================================================================
+*/
+
+// ✅ 自分の解答
+import React, { useState } from 'react';
+
+function TextProgress() {
+  // 入力テキストの状態を管理するuseStateを設定しましょう
+  const [text, setText] = useState('');
+
+  // 文字数に応じてバーの長さを設定しましょう（最大文字数は100文字）
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+  }
+
+  const progressPercentage = Math.min(text.length, 100);
+
+  return (
+    <div className="w-full max-w-md mx-auto">
+      <input
+        type="text"
+        placeholder="ここに文字を入力..."
+        className="border p-2 w-full"
+        value={text}
+        onChange={handleTextChange}
+      />
+      <div className="mt-4 w-full bg-gray-200 rounded">
+        <div
+          className="bg-blue-500 text-xs leading-none rounded text-center h-4"
+          style={{ width: `${progressPercentage}%`}}>
+        </div>
+      </div>
+      <p className="text-right text-sm mt-1">{text.length}/100文字</p>
+    </div>
+  );
+}
+
+export default TextProgress;
+
+// 📘 模範解答
+// import React, { useState } from 'react';
+
+// function TextProgress() {
+//   const [text, setText] = useState('');
+
+//   const handleTextChange = (event) => {
+//     setText(event.target.value);
+//   };
+
+//   const progressPercentage = Math.min(text.length, 100);
+
+//   return (
+//     <div className="w-full max-w-md mx-auto">
+//       <input
+//         type="text"
+//         placeholder="ここに文字を入力..."
+//         className="border p-2 w-full"
+//         value={text}
+//         onChange={handleTextChange}
+//       />
+//       <div className="mt-4 w-full bg-gray-200 rounded">
+//         <div
+//           className="bg-blue-500 text-xs leading-none rounded text-center h-4"
+//           style={{ width: `${progressPercentage}%` }}
+//         ></div>
+//       </div>
+//       <p className="text-right text-sm mt-1">{text.length}/100文字</p>
+//     </div>
+//   );
+// }
+
+// export default TextProgress;
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- フォームに対してイベントが発生するとonChangeが起動する
+- 対象のメソッドが呼び出され、eventからフォームに対する値を取得することができる
+- その値はevent.target.valueとして取得することができ、これはReactが管理するイベント
+\\
+--------------------------------------------------------------------------------
+*/
