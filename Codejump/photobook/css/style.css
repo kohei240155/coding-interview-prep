@@ -15,12 +15,8 @@ a {
 }
 
 img {
-    /* max-width: 100%; */
+    max-width: 100%;
 }
-
-/* li {
-    list-style: none;
-} */
 
 .container {
     width: 1000px;
@@ -122,4 +118,28 @@ header img {
 /* footer */
 footer p {
     margin-bottom: 17px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .inner {
+        padding: 0 40px;
+    }
+
+    #header {
+        padding: 0 40px;
+    }
+
+    #main-visual {
+        padding: 0 10px;
+    }
+
+    #detail .content {
+        flex-direction: column;
+    }
+
+    #detail .content img {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
 }
