@@ -30,3 +30,78 @@ console.log(hasProparty(user, propName));
 - オブジェクトが指定したプロパティを持っているかどうかはhasOwnPropertyでチェックできる
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: 選択に応じて動的にCSSクラスを切り替えよう🎨
+出典: https://jsgym.shiftb.dev/q/yarTtOPcwr
+================================================================================
+*/
+
+// ✅ 自分の解答
+import React, { useState } from 'react';
+
+function ColorPicker() {
+  //# 選択された色を管理するstateを用意しよう
+  const [color, setColor] = useState('');
+
+  const handleColorChange = (event) => {
+    setColor(event.target.value);
+  }
+
+  return (
+    <div className="p-4">
+      <select
+        className="border rounded px-2 py-1"
+        onChange={handleColorChange}
+      >
+        <option value="">カラーを選択してください</option>
+        <option value="bg-red-500">赤色</option>
+        <option value="bg-green-500">緑色</option>
+        <option value="bg-blue-500">青色</option>
+      </select>
+
+      <div className={`mt-4 w-full h-24 ${color}`}></div>
+    </div>
+  );
+}
+
+export default ColorPicker;
+
+// 📘 模範解答
+// import React, { useState } from 'react';
+
+// function ColorPicker() {
+//   const [color, setColor] = useState('');
+
+//   const handleColorChange = (event) => {
+//     setColor(event.target.value);
+//   };
+
+//   return (
+//     <div className="p-4">
+//       <select
+//         className="border rounded px-2 py-1"
+//         onChange={handleColorChange}
+//       >
+//         <option value="">カラーを選択してください</option>
+//         <option value="bg-red-500">赤色</option>
+//         <option value="bg-green-500">緑色</option>
+//         <option value="bg-blue-500">青色</option>
+//       </select>
+
+//       <div className={`mt-4 w-full h-24 ${color}`}></div>
+//     </div>
+//   );
+// }
+
+// export default ColorPicker;
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- selectタグはHTMLの一般的なタグ
+- ユーザーがリストを選択したときにonChangeが呼ばれる
+- eventプロパティからユーザーが選択した色を取り出せる
+--------------------------------------------------------------------------------
+*/
