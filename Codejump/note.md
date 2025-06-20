@@ -66,3 +66,8 @@
 | `<dl>` | definition list        | 説明リスト全体を囲む    |
 | `<dt>` | definition term        | 「用語」など、説明する項目 |
 | `<dd>` | definition description | 説明文（定義の内容）    |
+
+## 2025/06/20
+- gridを使うことでタイル状に簡単に画像を表示することができる
+- https://code-jump.com/css-grid/
+- 「grid-template-columns: repeat(2, 1fr);」は2列で同じ幅という意味
