@@ -73,10 +73,10 @@ header .site-title a {
 /* インデックス */
 #index {
     margin: 0 auto;
-    max-width: 100%;
     background-color: #F5F5F5;
     min-height: 240px;
     padding: 60px;
+    margin-bottom: 60px;
 }
 
 #index ol {
@@ -95,4 +95,12 @@ header .site-title a {
 
 #index li:last-child {
     margin-bottom: 0;
+}
+
+/* 画像 */
+#images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 60px;
 }
