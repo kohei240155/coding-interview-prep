@@ -23,8 +23,7 @@ img {
 
 .section-title {
     font-size: 1.125rem;
-    /* display: inline-block; */
-    margin: 30px 0;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -72,18 +71,28 @@ header .site-title a {
 }
 
 /* インデックス */
-/* #index {
+#index {
     margin: 0 auto;
-    min-width: 100%;
-} */
+    max-width: 100%;
+    background-color: #F5F5F5;
+    min-height: 240px;
+    padding: 60px;
+}
 
-/* #index h2 {
-    text-align: center;
-} */
+#index ol {
+    /* padding: 30px 137px; */
+    border: 1px solid black;
+    padding: 30px 0;
+}
 
 #index .item {
     list-style-position: inside;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+#index li:last-child {
+    margin-bottom: 0;
 }
