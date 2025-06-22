@@ -104,3 +104,43 @@ header .site-title a {
     gap: 16px;
     margin-bottom: 60px;
 }
+
+/* 詳細 */
+#detail {
+    background-color: #F5F5F5;
+    padding: 60px;
+    margin-bottom: 75px;
+}
+
+#detail .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#detail .info {
+    max-width: 238px;
+}
+
+#detail .text {
+    max-width: 402px;
+}
+
+#detail dt {
+    font-weight: bold;
+}
+
+#detail dd {
+    margin-bottom: 10px;
+}
+
+#detail dd:last-child {
+    margin-bottom: 0;
+}
+
+#detail .text p {
+    margin-bottom: 20px;
+}
+
+#detail .text p a {
+    border-bottom: 1px solid black;
+}
