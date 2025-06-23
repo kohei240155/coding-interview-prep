@@ -146,6 +146,7 @@ header .site-title a {
 /* フッター */
 footer {
     padding-bottom: 15px;
+    font-size: 0.625rem;
 }
 
 footer p {
@@ -176,5 +177,27 @@ footer p {
 
     #images {
         grid-template-columns: 1fr;
+    }
+
+    #detail {
+        padding: 40px 20px;
+    }
+
+    #detail .items {
+        display: block;
+    }
+
+    #detail .items .info {
+        max-width: 100%;
+    }
+
+    #detail .info {
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 40px;
+    }
+
+    #detail .text {
+        padding-top: 40px;
     }
 }
