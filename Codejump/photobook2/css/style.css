@@ -41,10 +41,6 @@ img {
     margin: 0 auto;
 }
 
-.inner {
-
-}
-
 /* ヘッダー */
 header {
     margin-top: 60px;
@@ -119,6 +115,8 @@ header .site-title a {
 
 #detail .info {
     max-width: 238px;
+    padding-right: 50px;
+    border-right: 1px solid black;
 }
 
 #detail .text {
@@ -152,4 +150,27 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0 10px;
+    }
+
+    #index {
+        padding: 40px 20px;
+    }
+
+    .inner {
+        padding: 40px 20px;
+    }
+
+    #index ol {
+        padding: 25px;
+    }
+
+    #index .item {
+        text-align: left;
+        list-style-position: outside;
+    }
 }
