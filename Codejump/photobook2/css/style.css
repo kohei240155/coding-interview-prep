@@ -144,3 +144,12 @@ header .site-title a {
 #detail .text p a {
     border-bottom: 1px solid black;
 }
+
+/* フッター */
+footer {
+    padding-bottom: 15px;
+}
+
+footer p {
+    text-align: center;
+}
