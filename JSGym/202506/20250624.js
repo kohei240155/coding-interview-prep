@@ -26,3 +26,58 @@ console.log(getStringLength(text));
 - lengthはプロパティだからlength()にする必要はない
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: クリックで色が切り替わるボタンを作ろう🌈
+出典: https://jsgym.shiftb.dev/q/Ht5y9K3UWZ
+================================================================================
+*/
+
+// ✅ 自分の解答
+import React, { useState } from 'react';
+
+function ColorChangerButton() {
+  // ここにstateを作成して初期値を設定してください
+  const colors = ['bg-gray-400', 'bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500']
+  const [currentColorIndex, setCurrentColorIndex] = useState(0);
+
+  // ここにクリックで色を切り替える関数を作成してください
+  const changeColor = () => {
+    setCurrentColorIndex((currentColorIndex + 1) % colors.length);
+  }
+
+  return (
+    <button
+      onClick={changeColor}
+      className={`px-4 py-2 font-semibold text-white rounded ${colors[currentColorIndex]}`}
+    >
+      色を変える
+    </button>
+  );
+}
+
+export default ColorChangerButton;
+
+// 📘 模範解答
+// import React, { useState } from 'react';
+
+// function ColorChangerButton() {
+//   const colors = ['bg-gray-400', 'bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500'];
+//   const [currentColorIndex, setCurrentColorIndex] = useState(0);
+
+//   const changeColor = () => {
+//     setCurrentColorIndex((currentColorIndex + 1) % colors.length);
+//   };
+
+//   return (
+//     <button
+//       onClick={changeColor}
+//       className={`px-4 py-2 font-semibold text-white rounded ${colors[currentColorIndex]}`}
+//     >
+//       色を変える
+//     </button>
+//   );
+// }
+
+// export default ColorChangerButton;
