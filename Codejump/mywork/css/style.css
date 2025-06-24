@@ -25,6 +25,7 @@ li {
     max-width: 858px;
 }
 
+/* Header */
 header {
     max-width: 858px;
     margin: 0 auto;
@@ -46,6 +47,10 @@ header li {
     margin-right: 30px;
 }
 
+header li a {
+    color: #383e45;
+}
+
 header li:last-child {
     margin-right: 0;
 }
@@ -56,6 +61,13 @@ header .instagram-icon {
     margin-right: 0;
 }
 
+/* Main Visual */
+#main-visual img {
+    max-width: 100%;
+    width: 1920px;
+    height: 420px;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 600px) {
 
