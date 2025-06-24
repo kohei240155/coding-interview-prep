@@ -21,6 +21,41 @@ li {
     list-style: none;
 }
 
+.wrapper {
+    max-width: 858px;
+}
+
+header {
+    max-width: 858px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 270px;
+    align-items: center;
+}
+
+header h1 {
+    max-width: 120px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin-right: 30px;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header .instagram-icon {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 0;
+}
+
 
 @media screen and (max-width: 600px) {
 
