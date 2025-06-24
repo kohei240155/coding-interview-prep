@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    min-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+}
