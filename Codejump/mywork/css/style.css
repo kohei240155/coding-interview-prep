@@ -124,6 +124,41 @@ header .instagram-icon {
     align-items: center;
 }
 
+/* Contact */
+#contact .form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact dt {
+}
+
+#contact .text {
+    height: 44px;
+    min-width: 729px;
+    border: 1px solid #C8C8C8;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact textarea {
+    height: 166px;
+    min-width: 729px;
+    border: 1px solid #C8C8C8;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#contact .button {
+    height: 52px;
+    padding: 15px 85px;
+    background-color: #24292E;
+    color: white;
+    margin: auto;
+    display: block;
+    margin-bottom: 130px;
+}
+
 @media screen and (max-width: 600px) {
 
 }
