@@ -61,3 +61,73 @@ console.log(sumOnlyOdd(numbers));
 - filter関数を使って偶数にフィルターしてからreduceを使用する方法もあった
 --------------------------------------------------------------------------------
 */
+
+/*
+================================================================================
+問題: フォーム入力のオン/オフを切り替えるトグルを作成しよう⚙️
+出典: https://jsgym.shiftb.dev/q/gHdJmuV1pz
+================================================================================
+*/
+
+// ✅ 自分の解答
+import React, { useState } from 'react';
+
+function InputToggle() {
+  //# useStateを使用して入力の有効/無効を管理する状態を作成してください。
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  const toggleInput = () => {
+    setIsDisabled(previousState => !previousState);
+  }
+
+  return (
+    <div>
+      <div>
+        <button
+          onClick={toggleInput}
+          className="px-4 py-2 bg-blue-400 text-white rounded"
+        >
+          {isDisabled ? "フォームを有効にする" : "フォームを無効にする"}
+        </button>
+        <input
+          type="text"
+          disabled={isDisabled}
+          placeholder="入力してみましょう"
+          className="border border-gray-300 rounded px-4 py-2"
+         />
+      </div>
+    </div>
+  );
+}
+
+export default InputToggle;
+
+// 📘 模範解答
+// import React, { useState } from 'react';
+
+// function InputToggle() {
+//   const [isDisabled, setIsDisabled] = useState(false);
+
+//   const toggleInput = () => {
+//     setIsDisabled(previousState => !previousState);
+//   };
+
+//   return (
+//     <div className="space-y-4">
+//       <button
+//         onClick={toggleInput}
+//         className="px-4 py-2 bg-blue-400 text-white rounded"
+//       >
+//         {isDisabled ? 'フォームを有効にする' : 'フォームを無効にする'}
+//       </button>
+//       <input
+//         type="text"
+//         disabled={isDisabled}
+//         placeholder="入力してみましょう"
+//         className="border border-gray-300 rounded px-4 py-2"
+//       />
+//     </div>
+//   );
+// }
+
+// export default InputToggle;
