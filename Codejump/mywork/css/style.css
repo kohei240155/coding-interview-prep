@@ -23,6 +23,7 @@ li {
 
 .wrapper {
     max-width: 858px;
+    margin: auto;
 }
 
 /* Header */
@@ -67,6 +68,20 @@ header .instagram-icon {
     width: 1920px;
     height: 420px;
     object-fit: cover;
+    margin-bottom: 80px;
+}
+
+/* About */
+#about {
+    margin-bottom: 130px;
+}
+
+.name {
+    margin-bottom: 30px;
+}
+
+.personal-info {
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 600px) {
