@@ -71,3 +71,11 @@
 - gridを使うことでタイル状に簡単に画像を表示することができる
 - https://code-jump.com/css-grid/
 - 「grid-template-columns: repeat(2, 1fr);」は2列で同じ幅という意味
+
+## 2025/06/23
+- dl,dd,dtは説明リストを表現するためのタグで、項目と説明をセットで表現したいときに便利なタグ
+- dl: definition list(説明リスト全体)
+- dt: definition term(説明する用語)
+- dd: definition description(その説明)
+- 最終のli要素に対してスタイル指定をしたい場合は「li:last-child」を使用する
+- 画像に対して「object-fit: cover;」を使用すると画像がはみ出ても縦横比を保って表示される
