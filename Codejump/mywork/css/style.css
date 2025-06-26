@@ -13,10 +13,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    min-width: 100%;
-}
-
 li {
     list-style: none;
 }
@@ -24,6 +20,11 @@ li {
 .wrapper {
     max-width: 858px;
     margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 /* Header */
@@ -82,6 +83,22 @@ header .instagram-icon {
 
 .personal-info {
     margin-bottom: 30px;
+}
+
+/* Works */
+#works {
+    margin-bottom: 150px;
+}
+
+#works .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#works img {
+    max-width: 266px;
+    max-height: 173px;
 }
 
 @media screen and (max-width: 600px) {
