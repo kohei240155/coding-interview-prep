@@ -130,9 +130,6 @@ header .instagram-icon {
     justify-content: space-between;
 }
 
-#contact dt {
-}
-
 #contact .text {
     height: 44px;
     min-width: 729px;
@@ -157,6 +154,17 @@ header .instagram-icon {
     margin: auto;
     display: block;
     margin-bottom: 130px;
+}
+
+/* Footer */
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    background-color: #24292E;
+    color: white;
+    font-size: 0.6rem;
 }
 
 @media screen and (max-width: 600px) {
