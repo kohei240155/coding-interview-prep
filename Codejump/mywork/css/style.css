@@ -101,6 +101,29 @@ header .instagram-icon {
     max-height: 173px;
 }
 
+/* News */
+#news {
+    margin-bottom: 130px;
+}
+
+#news dt {
+    margin-right: 78px;
+}
+
+#news .news-data {
+    display: flex;
+    height: 52px;
+}
+
+#news .top {
+    border-top: 1px solid #C8C8C8;
+}
+
+#news .news-data {
+    border-bottom: 1px solid #C8C8C8;
+    align-items: center;
+}
+
 @media screen and (max-width: 600px) {
 
 }
