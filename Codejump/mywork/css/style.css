@@ -169,4 +169,21 @@ footer p {
 
 @media screen and (max-width: 600px) {
 
+    /* Header */
+    header {
+        flex-direction: column;
+        height: 60px;
+        margin: 20px 0;
+        font-size: 0.8rem;
+    }
+
+    header li {
+        margin-right: 20px;
+    }
+
+    /* Works */
+    #works .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
