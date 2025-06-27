@@ -42,3 +42,37 @@ console.log(tenMultiple(number));
 // const multiplyByTen = num => num * 10;
 // const number = 3;
 // console.log(multiplyByTen(number)); // 30
+
+/*
+================================================================================
+問題: 入力された文字列を逆順にする関数を作ろう
+出典: https://jsgym.shiftb.dev/q/7Pyk9n74es
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ① 引数となる定数の定義
+const text = "hello";
+
+// ② お題を満たす関数の定義
+// ここに関数定義のコードを書いてください。
+const reverseString = (text) => text.split('').reverse().join('');
+
+// ③ 関数の実行と結果の表示
+// ここに関数を実行してconsole.logで結果を出力してください。
+console.log(reverseString(text));
+
+// 📘 模範解答
+// const reverseString = str => str.split('').reverse().join('');
+// const text = "hello";
+// console.log(reverseString(text)); // "olleh"
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- 文字列はsplit関数を使うことで配列形式に変換できる
+- reverseを使うと配列を逆順に並べることができる
+- joinを使って配列形式に分解した文字をくっつける
+- joinの引数に「''」を指定すると空文字で結合するという意味になる
+--------------------------------------------------------------------------------
+*/
