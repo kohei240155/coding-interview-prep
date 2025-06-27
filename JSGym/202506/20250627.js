@@ -100,3 +100,75 @@ console.log(sumNumbers(numbers));
 // const sumNumbers = nums => nums.reduce((a, b) => a + b, 0);
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(sumNumbers(numbers)); // 15
+
+/*
+================================================================================
+問題: 入力したカラーコードで色を表示しよう🌈
+出典: https://jsgym.shiftb.dev/q/7bcHT1efDP
+================================================================================
+*/
+
+// ✅ 自分の解答
+import React, {useState} from 'react';
+
+function ColorDisplay() {
+  // 状態を管理するコードを書いてください。
+  const [currentColor, setCurrentColor] = useState('');
+
+  const handleInput = (e) => {
+    setCurrentColor(e.target.value);
+  }
+
+  // カラーコードの入力 / 表示を行うフォームと div要素を作成してください。
+  return (
+    <div>
+      <input
+        type="text"
+        className="border p-3 m-4"
+        placeholder="カラーコードを入力"
+        onChange={handleInput}
+        >
+      </input>
+      <div
+        className="m-4 p-20 w-15 h-15"
+        style={{backgroundColor: currentColor}}
+      >
+      </div>
+    </div>
+  )
+}
+
+export default ColorDisplay;
+
+// 📘 模範解答
+// import React, { useState } from 'react';
+
+// function ColorDisplay() {
+//   const [color, setColor] = useState('');
+
+//   return (
+//     <div className="p-4">
+//       <input
+//         type="text"
+//         value={color}
+//         onChange={(e) => setColor(e.target.value)}
+//         placeholder="カラーコードを入力"
+//         className="border p-2 mb-4"
+//       />
+//       <div
+//         className="w-40 h-40"
+//         style={{ backgroundColor: color || 'transparent' }}
+//       ></div>
+//     </div>
+//   );
+// }
+
+// export default ColorDisplay;
+
+/*
+--------------------------------------------------------------------------------
+📝 学んだこと:
+- inputタグのonChangeで直接setColorを実行してもよい
+- style指定ではtailwindではなく、DOMのスタイルオブジェクトに定義されたstyleを使うとよい
+--------------------------------------------------------------------------------
+*/
