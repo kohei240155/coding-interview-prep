@@ -45,3 +45,28 @@ console.log(concatStr(str));
 // const combineFirstAndLast = str => str[0] + str[str.length - 1];
 // const str = "Hello";
 // console.log(combineFirstAndLast(str)); // "Ho"
+
+/*
+================================================================================
+問題: 引数が偶数かどうかを判定する関数を作ろう😉
+出典: https://jsgym.shiftb.dev/q/YWkQ8VgmTl
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ① 引数となる数値の定義
+const number = 4;
+
+// ② 偶数かどうか判定する関数を定義してね😉
+// ここに関数を書いてみて！
+const isDouble = (number) => number % 2 === 0;
+
+// ③ 関数の実行とconsole.logで結果の表示✨
+// ここで関数を実行してconsole.logで結果表示するよ〜😉
+console.log(isDouble(number));
+
+// 📘 模範解答
+// const isEven = num => num % 2 === 0;
+// const number = 4;
+// console.log(isEven(number)); // true
+
