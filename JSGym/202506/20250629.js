@@ -21,3 +21,27 @@ console.log(getMaxNum(numbers));
 // const getMaxValue = arr => Math.max(...arr);
 // const numbers = [1, 3, 7, 2, 5];
 // console.log(getMaxValue(numbers)); // 7
+
+/*
+================================================================================
+問題: 文字列の最初と最後を結合する関数
+出典: https://jsgym.shiftb.dev/q/cuI7T5gxDa
+================================================================================
+*/
+
+// ✅ 自分の解答
+// ① 引数となる定数の定義
+const str = "Hello";
+
+// ② お題を満たす関数の定義
+// ここに関数定義のコードを書いてください。
+const concatStr = (str) => str[0] + str[str.length - 1];
+
+// ③ 関数の実行
+// ここに関数実行のコードを書いてください。
+console.log(concatStr(str));
+
+// 📘 模範解答
+// const combineFirstAndLast = str => str[0] + str[str.length - 1];
+// const str = "Hello";
+// console.log(combineFirstAndLast(str)); // "Ho"
