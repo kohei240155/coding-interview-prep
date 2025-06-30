@@ -18,10 +18,6 @@ li {
     list-style: none;
 }
 
-/* img {
-    min-width: 100%;
-} */
-
 /* Header */
 header {
     max-width: 100%;
@@ -32,8 +28,9 @@ header {
 
 header .menu {
     display: flex;
-    justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    margin-left: 100px;
 }
 
 header img {
@@ -42,14 +39,16 @@ header img {
 }
 
 header ul {
-    max-width: 334px;
+    width: 334px;
     height: 21px;
+    margin-left: 60px;
     display: flex;
     justify-content: space-between;
-    background: yellow;
+    align-items: center;
 }
 
 header .contact-button {
     background: black;
     color: white;
+    min-width: 200px;
 }
