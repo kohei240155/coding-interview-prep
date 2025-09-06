@@ -6,5 +6,5 @@ import StateFormUC from './chap04/StateFormUC';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StateFormUC />
+  <StateForm />
 );
