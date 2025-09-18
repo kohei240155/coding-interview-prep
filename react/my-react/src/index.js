@@ -7,6 +7,7 @@ import StateForm from './chap04/StateForm';
 import FormTextArea from './chap04/FormTextarea';
 import FormSelect from './chap04/FormSelect';
 import FormList from './chap04/FormList';
+import FormRadio from './chap04/FormRadio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,5 +17,6 @@ root.render(
     <FormTextArea />
     <FormSelect />
     <FormList />
+    <FormRadio />
   </>
 );
