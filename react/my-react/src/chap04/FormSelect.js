@@ -29,7 +29,7 @@ export default function FormSelect() {
                 <option value="cat">ネコ</option>
                 <option value="hamster">ハムスター</option>
                 <option value="rabbit">ウサギ</option>
-            </select>
+            </select><br />
             <button
                 type="button"
                 onClick={show}
