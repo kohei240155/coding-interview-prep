@@ -8,6 +8,7 @@ import FormTextArea from './chap04/FormTextarea';
 import FormSelect from './chap04/FormSelect';
 import FormList from './chap04/FormList';
 import FormRadio from './chap04/FormRadio';
+import FormCheck from './chap04/FormCheck';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,5 +19,6 @@ root.render(
     <FormSelect />
     <FormList />
     <FormRadio />
+    <FormCheck />
   </>
 );
